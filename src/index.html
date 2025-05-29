@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rnav</title>
+    <link rel="icon" href="Assets/favicon_io/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="landing-page">
+        <div class="col-1">
+            <header>
+                <div class="menu">
+                    <div class="menu-home">
+                        <a href="#">Naveen Reddi</a>
+                    </div>
+                    <button class="menu-toggle" aria-label="Toggle navigation">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <ul class="menu-links">
+                        <li class="btn"><a class="link-type-menu" href="#work-section">Work</a></li>
+                        <li class="btn"><a class="link-type-menu" href="#about-section">About</a></li>
+                        <li class="btn"><a class="link-type-menu" href="#contact-section">Contact</a></li>
+                    </ul>
+                </div>
+            </header>
+        </div>
+
+        <div class="col-2">
+            <!-- Work Section -->
+            <div id="work-section">
+                <div class="project-card">
+                    <div class="project-image" onclick="projects()">
+                        <img src="Assets/fill-stack.png" alt="Full-Stack Web App Preview" />
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category" onclick="projects()">Web Development</div>
+                        <strong class="project-title" onclick="projects()">Full-Stack Web Application</strong>
+                        <h5 class="project-description" onclick="projects()">Designed and developed a dynamic web
+                            platform</h5>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" onclick="projects()">
+                        <img src="Assets/ui&ux.jpg" alt="UI/UX Design Preview" />
+                    </div>
+                    <div class="project-info">
+                        <div class="project-category" onclick="projects()">UI/UX Design</div>
+                        <strong class="project-title" onclick="projects()">User Interface & Experience Concept</strong>
+                        <h5 class="project-description" onclick="projects()">Crafted visually engaging interfaces</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div id="about-section">
+                <h2>About</h2>
+                <p>
+                    I am a passionate web developer with a keen interest in creating dynamic and user-friendly web
+                    applications. My expertise lies in both front-end and back-end development, allowing me to build
+                    comprehensive solutions that meet user needs.
+                </p>
+                <h4 style="padding-top: 10px;">Website</h4>
+                <p style="margin: 0;">This site was designed and built by me.</p>
+            </div>
+
+            <!-- Contact Section -->
+            <div id="contact-section">
+                <h2>Contact</h2>
+                <div class="contact-section">
+                    <a class="email" href="mailto:reddinaveen2005@gmail.com">reddinaveen2005@gmail.com</a>
+                </div>
+            </div>
+
+            <!-- Resume Section -->
+            <div class="resume-section">
+                <a class="resume-link" href="Assets/RESUME.pdf" target="_blank">
+                    VIEW RESUME
+                    <span class="resume-arrow">
+                        <i class="bi bi-arrow-right" style="display: flex;"></i>
+                    </span>
+                </a>
+            </div>
+
+        </div>
+        <div class="top-scroll" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+            <i class="bi bi-arrow-up"></i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
